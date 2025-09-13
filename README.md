@@ -45,19 +45,21 @@ The included [`fix-azure-update-manager.sh`](./fix-azure-update-manager.sh) scri
    curl -O https://raw.githubusercontent.com/<your-repo>/fix-azure-update-manager.sh
    chmod +x fix-azure-update-manager.sh
 
-   Run the script:
+   # Run the script:
 
-./fix-azure-update-manager.sh
+   ./fix-azure-update-manager.sh
 
 
 ##Confirm WALinuxAgent is running:
 
+```bash
 systemctl status walinuxagent
 waagent --version
 
 ##Verify sudo works non-interactively:
 
 sudo -n true && echo "NOPASSWD works!"
+```
 
 Back in the Azure Portal, rerun Check for updates in Update Manager.
 
@@ -65,12 +67,13 @@ Example Output
 
 When the script succeeds, you’ll see output like:
 
-=== Checking WALinuxAgent ===
+```bash=== Checking WALinuxAgent ===
 WALinuxAgent-2.2.46 running on ubuntu 22.04
 === Configuring sudoers for NOPASSWD ===
 /etc/sudoers.d/azureuser: parsed OK
 NOPASSWD sudo works.
 === Done! Retry Azure Update Manager assessment. ===
+```
 
 ##Troubleshooting
 
