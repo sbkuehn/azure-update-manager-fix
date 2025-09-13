@@ -56,7 +56,7 @@ systemctl status walinuxagent
 waagent --version
 ```
 
-##Verify sudo works non-interactively:
+## Verify sudo works non-interactively:
 
 ```bash
 sudo -n true && echo "NOPASSWD works!"
