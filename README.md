@@ -48,8 +48,7 @@ The included [`fix-azure-update-manager.sh`](./fix-azure-update-manager.sh) scri
    # Run the script:
 
    ./fix-azure-update-manager.sh
-```
-```
+
 ## Confirm WALinuxAgent is running:
 
 ```bash
@@ -63,7 +62,7 @@ sudo -n true && echo "NOPASSWD works!"
 
 Back in the Azure Portal, rerun Check for updates in Update Manager.
 
-Example Output
+## Example Output
 
 When the script succeeds, you’ll see output like:
 
