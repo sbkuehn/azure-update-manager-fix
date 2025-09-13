@@ -50,7 +50,7 @@ The included [`fix-azure-update-manager.sh`](./fix-azure-update-manager.sh) scri
    ./fix-azure-update-manager.sh
 
 
-##Confirm WALinuxAgent is running:
+## Confirm WALinuxAgent is running:
 
 ```bash
 systemctl status walinuxagent
@@ -75,7 +75,7 @@ NOPASSWD sudo works.
 === Done! Retry Azure Update Manager assessment. ===
 ```
 
-##Troubleshooting
+## Troubleshooting
 
 Is it still failing?
 
