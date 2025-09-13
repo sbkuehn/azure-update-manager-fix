@@ -54,9 +54,11 @@ The included [`fix-azure-update-manager.sh`](./fix-azure-update-manager.sh) scri
 ```bash
 systemctl status walinuxagent
 waagent --version
+```
 
 ##Verify sudo works non-interactively:
 
+```bash
 sudo -n true && echo "NOPASSWD works!"
 ```
 
@@ -66,7 +68,8 @@ Back in the Azure Portal, rerun Check for updates in Update Manager.
 
 When the script succeeds, you’ll see output like:
 
-```bash=== Checking WALinuxAgent ===
+```bash
+=== Checking WALinuxAgent ===
 WALinuxAgent-2.2.46 running on ubuntu 22.04
 === Configuring sudoers for NOPASSWD ===
 /etc/sudoers.d/azureuser: parsed OK
@@ -80,7 +83,9 @@ Is it still failing?
 
 Check the extension logs:
 
+```bash
 cat /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/*.log
+```
 
 Hardened images: If your VM was CIS-hardened or customized, double-check /etc/sudoers for requiretty (should be disabled).
 
