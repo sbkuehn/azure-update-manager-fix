@@ -89,11 +89,11 @@ cat /var/log/azure/Microsoft.CPlat.Core.LinuxPatchExtension/*.log
 
 Hardened images: If your VM was CIS-hardened or customized, double-check /etc/sudoers for requiretty (should be disabled).
 
-##License
+## License
 
 MIT License. Use at your own risk.
 
-##References
+## References
 
 [Azure Update Manager docs](https://learn.microsoft.com/azure/update-center/overview)<br>
 [WALinuxAgent GitHub](https://github.com/Azure/WALinuxAgent)
