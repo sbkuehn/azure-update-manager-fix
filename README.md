@@ -88,5 +88,5 @@ MIT License. Use at your own risk.
 
 ##References
 
-[Azure Update Manager docs](https://learn.microsoft.com/azure/update-center/overview)
+[Azure Update Manager docs](https://learn.microsoft.com/azure/update-center/overview)<br>
 [WALinuxAgent GitHub](https://github.com/Azure/WALinuxAgent)
