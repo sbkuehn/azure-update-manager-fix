@@ -48,8 +48,8 @@ The included [`fix-azure-update-manager.sh`](./fix-azure-update-manager.sh) scri
    # Run the script:
 
    ./fix-azure-update-manager.sh
-
-
+```
+```
 ## Confirm WALinuxAgent is running:
 
 ```bash
