@@ -2,9 +2,9 @@
 
 Azure Update Manager can fail patch assessments on Linux VMs with the following error:
 
-Assessment failed due to this reason: The VM guest patch operation failed.
+<i>Assessment failed due to this reason: The VM guest patch operation failed.
 Error: 'Sudo status check failed. Please ensure the computer is configured correctly for sudo invocation.
-Please refer to the extension logs for more details.'
+Please refer to the extension logs for more details.'</i>
 
 This typically happens because:
 - The **Azure Linux Agent (WALinuxAgent)** isn’t running correctly, or  
